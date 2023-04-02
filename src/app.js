@@ -10,7 +10,7 @@ const app = express();
 console.clear();
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.send("Hello, World! \n How are you doing today ?);
 });
 
 app.listen(configration.port, () => {
