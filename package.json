@@ -2,9 +2,12 @@
   "name": "dev-nodejs-playground",
   "version": "1.0.0",
   "description": "nodejs playground",
-  "main": "server.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon server",
+    "dev": "nodemon src/app.js",
+    "start:development": "cross-env NODE_ENV=development nodemon src/app.js",
+    "start:testing": "cross-env NODE_ENV=testing nodemon src/app.js",
+    "start:production": "cross-env NODE_ENV=production nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "gotham-prabhu",
